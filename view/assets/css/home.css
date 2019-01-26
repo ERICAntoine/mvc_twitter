@@ -217,7 +217,9 @@ div.images img
 	height: 50em;
 	border: 1px solid black;
 	border-radius: 1em;
-	margin-top: 1em; }
+	margin-top: 1em; 
+	background: #fff;
+}
 	.contentMessenger input {
 	  border: 1px solid grey;
 	  height: 1.5em;
@@ -245,11 +247,14 @@ div.images img
 	  flex-direction: column;
 	  width: 70%;
 	  height: 100%;
-	  border-left: 1px solid black; }
+	 }
 	  .contentMessenger .messenger .messengerBox {
 		height: 100%;
 		width: 100%;
-		border-bottom: 1px solid black; }
+		border-bottom: 1px solid black;
+		max-height: 500px;
+		overflow: auto;
+	 }
 	  .contentMessenger .messenger .messengerText {
 		display: flex;
 		justify-content: center;
@@ -277,7 +282,7 @@ div.images img
 	.convLeft .convDate, .convRight .convDate {
 	  width: 30%; }
 	.convLeft .convContent, .convRight .convContent {
-	  width: 70%;
+	  width: 100%;
 	  font-weight: bolder; }
   
   .convRight {

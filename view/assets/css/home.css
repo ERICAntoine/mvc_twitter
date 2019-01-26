@@ -1,0 +1,292 @@
+html,body
+{
+	height: 100%;
+}
+
+.none
+{
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: #000;
+}
+
+.height
+{
+	height: 100%;
+}
+
+#myVideo
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.video
+{
+    z-index: -1000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.logo img
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 238px;
+    margin-right: 195px;
+}
+
+.image
+{
+    padding: 10px;
+}
+
+.images
+{
+    width: 65px;
+    border-radius: 50%;
+    border: 0.5px solid #000;
+    padding: 5px;
+}
+
+.card
+{
+    height: fit-content;
+}
+
+header
+{
+    box-shadow: 0px 0.5px 1px black;
+    background: #fff;
+}
+
+.timeline
+{
+    padding-top: 25px;
+}
+
+.search_bar
+{
+    border-radius: 20px;
+}
+
+.padding
+{
+    padding: 15px;
+}
+.all_tweet
+{
+	background: #fff;
+	min-height: 200px;
+}
+.tweet_area
+{
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.tweet_area input
+{
+    border: none;
+    padding: 9px;
+    border-radius: 10%;
+    background: #1da1f2;
+    color: #fff;
+}
+
+.tweet_area textarea
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.image
+{
+    border-bottom: 1px solid #000
+}
+
+.tweet
+{
+	display: flex;
+	border-bottom: 1px solid #000;
+}
+
+.tweet_photo
+{
+    padding: 10px;
+}
+
+.tweet_describe
+{
+    width: 100%;
+    padding: 10px;
+}
+
+.tweet_photo .images
+{
+    width: 50px;
+    padding: 5px;
+}
+
+.mx-auto
+{
+    padding: 4em;
+}
+
+.d-grid
+{
+    display: grid;
+    margin-right: 5px;
+}
+
+.d-grid strong
+{
+    margin: auto;
+}
+
+.flex-text
+{
+    display: flex;
+}
+
+.profile
+{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.marg-r-10
+{
+    margin-right: 10px;
+}
+
+.profile .image-profil .images
+{
+    height: 48px;
+    width: 50px;
+    padding: 6px;
+}
+
+.logout
+{
+    width: auto;
+}
+
+div.images img
+{
+    width: 36px;
+}
+
+.settings
+{
+    width: auto;
+}
+
+.loading
+{
+	position: relative;
+    top: 90px;
+}
+
+.ui-menu {
+    width: min-content;
+    background: #fff;
+    overflow: scroll;
+	height: 108px;
+	z-index: 100000;
+	list-style: none;
+}	
+
+.contentMessenger {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	width: 90%;
+	height: 50em;
+	border: 1px solid black;
+	border-radius: 1em;
+	margin-top: 1em; }
+	.contentMessenger input {
+	  border: 1px solid grey;
+	  height: 1.5em;
+	  width: 90%;
+	  padding: 3px;
+	  border-radius: 0.5em; }
+	.contentMessenger .contactSearch {
+	  width: 100%; }
+	.contentMessenger .contact {
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column;
+	  width: 30%;
+	  height: 100%; }
+	  .contentMessenger .contact #contactResult {
+		width: 100%; }
+	  .contentMessenger .contact .contactBox {
+		height: 7em;
+		width: 92%;
+		border-bottom: 1px solid black;
+		padding: 4%; }
+	.contentMessenger .messenger {
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column;
+	  width: 70%;
+	  height: 100%;
+	  border-left: 1px solid black; }
+	  .contentMessenger .messenger .messengerBox {
+		height: 100%;
+		width: 100%;
+		border-bottom: 1px solid black; }
+	  .contentMessenger .messenger .messengerText {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 10em; }
+		.contentMessenger .messenger .messengerText textarea {
+		  width: 90%;
+		  height: 70%;
+		  border-radius: 0.5em;
+		  padding: 0.5em; }
+		.contentMessenger .messenger .messengerText .inputMsg {
+		  width: 90%;
+		  height: 90%; }
+		  .contentMessenger .messenger .messengerText .inputMsg input {
+			width: 30em; }
+  
+  .convLeft, .convRight {
+	display: flex;
+	border: 1px solid grey;
+	border-radius: 1em;
+	padding: 2%;
+	margin: 2%;
+	width: 92%; }
+	.convLeft .convDate, .convRight .convDate {
+	  width: 30%; }
+	.convLeft .convContent, .convRight .convContent {
+	  width: 70%;
+	  font-weight: bolder; }
+  
+  .convRight {
+	background-color: rgba(200, 247, 197, 0.8);
+	justify-content: flex-end; }
+	.convRight .convContent {
+	  text-align: right; }
+  
+  .convLeft {
+	background-color: rgba(197, 239, 247, 0.8); }
+	.convLeft .convDate {
+	  text-align: right; }

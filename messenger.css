@@ -1,0 +1,82 @@
+.contentMessenger {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	width: 90%;
+	height: 50em;
+	border: 1px solid black;
+	border-radius: 1em;
+	margin-top: 1em; }
+	.contentMessenger input {
+	  border: 1px solid grey;
+	  height: 1.5em;
+	  width: 90%;
+	  padding: 3px;
+	  border-radius: 0.5em; }
+	.contentMessenger .contactSearch {
+	  width: 100%; }
+	.contentMessenger .contact {
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column;
+	  width: 30%;
+	  height: 100%; }
+	  .contentMessenger .contact #contactResult {
+		width: 100%; }
+	  .contentMessenger .contact .contactBox {
+		height: 7em;
+		width: 92%;
+		border-bottom: 1px solid black;
+		padding: 4%; }
+	.contentMessenger .messenger {
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column;
+	  width: 70%;
+	  height: 100%;
+	  border-left: 1px solid black; }
+	  .contentMessenger .messenger .messengerBox {
+		height: 100%;
+		width: 100%;
+		border-bottom: 1px solid black; }
+	  .contentMessenger .messenger .messengerText {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 10em; }
+		.contentMessenger .messenger .messengerText textarea {
+		  width: 90%;
+		  height: 70%;
+		  border-radius: 0.5em;
+		  padding: 0.5em; }
+		.contentMessenger .messenger .messengerText .inputMsg {
+		  width: 90%;
+		  height: 90%; }
+		  .contentMessenger .messenger .messengerText .inputMsg input {
+			width: 30em; }
+  
+  .convLeft, .convRight {
+	display: flex;
+	border: 1px solid grey;
+	border-radius: 1em;
+	padding: 2%;
+	margin: 2%;
+	width: 92%; }
+	.convLeft .convDate, .convRight .convDate {
+	  width: 30%; }
+	.convLeft .convContent, .convRight .convContent {
+	  width: 70%;
+	  font-weight: bolder; }
+  
+  .convRight {
+	background-color: rgba(200, 247, 197, 0.8);
+	justify-content: flex-end; }
+	.convRight .convContent {
+	  text-align: right; }
+  
+  .convLeft {
+	background-color: rgba(197, 239, 247, 0.8); }
+	.convLeft .convDate {
+	  text-align: right; }
+  

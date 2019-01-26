@@ -1,0 +1,33 @@
+.upload_image
+{
+    width: 100px;
+}
+
+.form_change
+{
+    display: grid;
+    margin: 10px;
+}
+
+.fit
+{
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+}
+
+.label_image
+{
+    margin: auto;
+}
+
+.form_change input[type=submit]
+{
+    margin-top: 20px;
+}
+
+.btn-submit
+{
+    background: #1da1f2;
+    color: #fff;
+}

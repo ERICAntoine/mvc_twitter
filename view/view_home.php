@@ -35,9 +35,9 @@
 					<div class="container">
 						<form method="post">
 							<div class="tweet_area padding shadow-sm p-3 mb-5 rounded">
-								<textarea list="hash" id="textareatweet" name="content" class="form-control" placeholder="Tweet ici ..."></textarea>
+								<textarea id="textareatweet" name="content" class="form-control" placeholder="Tweet ici ..."></textarea>
 								<div id="sugges" class="suggestion"></div>
-								<input type="submit" value="Tweet" name="post_tweet">
+								<input id="sub_tweet" type="submit" value="Tweet" name="post_tweet">
 							</div>
 						</form>
 					</div>
@@ -54,6 +54,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="view/assets/js/tweet.js"></script>
 	<script src="view/assets/js/timeline.js"></script>
 </body>
 </html>

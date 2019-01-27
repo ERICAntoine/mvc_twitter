@@ -11,5 +11,6 @@ $(document).ready(function()
                 console.log(data);
             }
         })
+        location.reload();
     })
 })

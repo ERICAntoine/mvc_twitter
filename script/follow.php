@@ -30,6 +30,7 @@
             $resquest = "INSERT INTO follows(id_follower, id_following) VALUES ($user, $profil)";
             $getInfo = $db -> prepare($resquest);
             $getInfo -> execute();
+            echo "update";
             return $getInfo;
         }
 
@@ -41,6 +42,7 @@
             $resquest = "DELETE FROM follows WHERE id_follower = $user  AND id_following = $profil";
             $getInfo = $db -> prepare($resquest);
             $getInfo -> execute();
+            echo "delete";
             return $getInfo;
         }
     }

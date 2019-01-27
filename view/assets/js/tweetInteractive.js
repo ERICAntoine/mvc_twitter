@@ -10,6 +10,7 @@ $(document).ready(function()
             success: function(data)
             {
                 (data != "delete" ? $(heart).attr("src", "view/assets/images/redlike.svg") : $(heart).attr("src", "view/assets/images/like.svg"));
+                location.reload();
             }
         })
     })

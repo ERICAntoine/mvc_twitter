@@ -38,8 +38,9 @@
 					<div class="container">
 						<form method="post">
 							<div class="tweet_area padding shadow-sm p-3 mb-5 rounded">
-								<textarea name="content" class="form-control" placeholder="Tweet ici ..."></textarea>
-								<input name="post_tweet" type="submit" value="Tweet">
+								<textarea id="textareatweet" name="content" class="form-control" placeholder="Tweet ici ..."></textarea>
+								<div id="sugges" class="suggestion"></div>
+								<input id="sub_tweet" name="post_tweet" type="submit" value="Tweet">
 							</div>
 						</form>
 					</div>
@@ -76,6 +77,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="view/assets/js/tweet.js"></script>
 	<script src="view/assets/js/Follow.js"></script>
 	<script src="view/assets/js/tweetInteractive.js"></script>
 </body>

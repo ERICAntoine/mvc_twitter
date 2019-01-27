@@ -15,7 +15,6 @@ if (!isset($_SESSION['pseudo'])) {
 
 else if (isset($_GET['c']) && $_GET['c'] == 'home') {
 	include 'model/model_home.php';
-	include 'script/tweet.php';
 	include 'view/view_home.php';
 }
 
@@ -33,7 +32,6 @@ else if (isset($_GET['c']) && $_GET['c'] == 'profil') {
 		Profil::edit();
 		include 'view/view_editProfil.php';
 	} else {
-		include 'script/tweet.php';
 		include 'view/view_profil.php';
 	}
 }
@@ -69,7 +67,6 @@ else if (isset($_GET['confirm']) && $_GET['confirm'] != '') {
 
 else {
 	include 'model/model_home.php';
-	include 'script/tweet.php';
 	include 'view/view_home.php';
 }
 //echo 'SESSION : ';

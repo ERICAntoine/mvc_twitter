@@ -35,7 +35,8 @@
 					<div class="container">
 						<form method="post">
 							<div class="tweet_area padding shadow-sm p-3 mb-5 rounded">
-								<textarea id="textareatweet" name="content" class="form-control" placeholder="Tweet ici ..."></textarea>
+								<textarea list="hash" id="textareatweet" name="content" class="form-control" placeholder="Tweet ici ..."></textarea>
+								<div id="sugges" class="suggestion"></div>
 								<input type="submit" value="Tweet" name="post_tweet">
 							</div>
 						</form>

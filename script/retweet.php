@@ -11,18 +11,6 @@
             $this -> currentUser = $currentUser;
         }
 
-        public function checkRetweet()
-        {
-            $user = $this -> currentUser;
-            $tweet = $this -> tweetId;
-            $db = DATA::PDO();
-            $resquest = "SELECT * from users WHERE id_user = $user  AND id_tweet = $tweet";
-            $getInfo = $db -> prepare($resquest);
-            $getInfo -> execute();
-            $count = $getInfo -> rowCount();
-            return $count > 0 ? true : false;
-        }
-
         public function updateRetweet()
         {
             $user = $this -> currentUser;

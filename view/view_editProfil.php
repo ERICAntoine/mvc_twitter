@@ -36,6 +36,13 @@
                 </form>
             </div>
             <div class="card fit">
+                <form id="upload_video" method="POST" enctype="multipart/form-data">
+                    <label for="theme">Change Background Video</label>           
+                    <input id="video_upload" name="video" type="file">
+                    <input id="submitvideo" name="videosub" type="submit">
+                </form>
+            </div>
+            <div class="card fit">
             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteAccount">Delete Account</button>
             <div class="modal fade" id="deleteAccount">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -68,6 +75,6 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
     <script src="view/assets/js/UpImage.js"></script>
-
+    <script src="view/assets/js/Upvideo.js"></script>
 </body>
 </html>

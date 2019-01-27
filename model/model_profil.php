@@ -57,7 +57,14 @@
                     $u[] = $donnes2["nombre"];
                 }
             }
-            return $u;
+            if(!empty($u))
+            {
+                return $u;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         public function countFollower()

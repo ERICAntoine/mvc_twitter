@@ -77,7 +77,11 @@
 	</header>
 	<div class="video">
         <video autoplay muted loop id="myVideo">
-        	<source src="view/assets/images/video.mp4" type="video/mp4">
+		<?php if(file_exists("userImages/" . $_SESSION['id'] . '/background.mp4')):?>
+			<source src="userImages/<?= $_SESSION["id"]?>/background.mp4" type="video/mp4">
+		<?php else: ?>
+			<source src="view/assets/images/video.mp4" type="video/mp4">
+		<?php endif;?>
 		</video>
     </div>
 

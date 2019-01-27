@@ -48,23 +48,25 @@ class Personals extends Data
 
         public function deleteAccount()
         {
-            if(isset($_GET["delete"]) && !empty($_GET["delete"]))
+            if(isset($_POST["delete"]) && !empty($_POST["delete"]))
             {
                 $db = Data::PDO();
                 $id = $_SESSION["id"];
                 $resquest = "DELETE FROM users WHERE id = $id";
                 $update = $db -> prepare($resquest);
                 $update -> execute();
-                unlink("userImages/". $id."/profil.jpg");
-                rmdir("userImages/" . $id);
-                header("Location: logout.php");
+                //unlink("userImages/". $id."/profil.jpg");
+                //rmdir("userImages/" . $id);
+                header("Location: index.php?logout=1");
             }
         }
     }
 
+    var_dump($_GET);
+
     $edit = new Personals($_POST);
     $editInfo = $edit -> updateInfo();
     $refesh = ($editInfo != false ? $edit -> refresh() : false);
-  //  $edit -> delete();
+    $edit -> deleteAccount();
 
 ?>

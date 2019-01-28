@@ -26,7 +26,7 @@ Class pseudo extends Data{
             
             $pseudo_pass = hash("ripemd160", $_POST['pass'] . "si tu aimes la wac tape dans tes mains");
             
-            var_dump($hashPass);
+            // var_dump($hashPass);
             
             $vPDO = Data::PDO();
             $sql = 'SELECT * FROM users WHERE pseudo="'.$_POST['pseudo'].'"';
@@ -34,9 +34,9 @@ Class pseudo extends Data{
             $req = $vPDO->query($sql);
             $data = $req->fetch();
             
-            if ($data['password'] == $hashPass) {
+            if ($data['pswrd'] == $pseudo_pass) {
                 // var_dump($data['confirmed']);
-                // if ($data['token'] == 'confirmed') {$lastupdated = date('Y-m-d H:i:s');
+                if ($data['token'] == '1'){
                     echo 'CORRECT';
                     $_SESSION['pseudo'] = $data['pseudo'];
                     $_SESSION['lastname'] = $data['last_name'];
@@ -57,6 +57,7 @@ Class pseudo extends Data{
                 // var_dump($_SESSION);
             }
         }
+    }
         
         public function register(){
             
@@ -137,7 +138,7 @@ Class pseudo extends Data{
                         'pswrd' => $hashpass,
                         'id_theme' => $theme
                         ]);                    
-                        // include_once 'mailer.php';                    
+                        include_once 'mailer.php';                    
                         
                         if($result == true){
                             echo "<p>Welcome, you have been registred</p>"; 

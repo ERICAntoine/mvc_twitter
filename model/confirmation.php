@@ -3,13 +3,13 @@
 		public function __construct() {
 		}
 
-		public static function confirm($login) {
+		public static function confirm($pseudo) {
 			$vPDO = Data::PDO();
 
 			echo 'ici';
-			$req = $vPDO->prepare('UPDATE users SET confirmed="confirmed" WHERE login=:login');
+			$req = $vPDO->prepare('UPDATE users SET token="1" WHERE pseudo=:pseudo');
 			$test = $req->execute([
-				'login' => $login
+				'pseudo' => $pseudo
 			]);
 			
 			if ($test) {

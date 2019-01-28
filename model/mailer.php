@@ -7,16 +7,17 @@ try {
 	$transport->setPassword('admin.root');
 
 	// SOUTENANCE VAR FOLDER PATH
-	$var = 'http://localhost/html/PHP_my_meetic/my_meetic/';
+	
+	$var = 'http://localhost/mvc_tweet/';
 
 	$mailer = new Swift_Mailer($transport);
-	$message = (new Swift_Message('Confirmation de votre compte my_meetic.'));
-	$message->setFrom(['noreplymymeetic@gmail.com' => 'my_meetic - ADMIN']);
+	$message = (new Swift_Message('Confirmation de votre compte twitter.'));
+	$message->setFrom(['noreplymymeetic@gmail.com' => 'twitter - ADMIN']);
 	$message->setTo($email);
 	$message->setBody('
-		Bienvenue sur my_meetic
+		Bienvenue sur twitter
 
-		Merci d\'utiliser le lien suivant afin de confirmer votre compte my_meetic : http://localhost:1212/?confirm='.$login.'
+		Merci d\'utiliser le lien suivant afin de confirmer votre compte twitter : http://localhost/mvc_tweet/?confirm='.$pseudo.'
 		Bien à vous.
 		Merci de ne pas répondre à ce mail.');
 	$result = $mailer->send($message);
